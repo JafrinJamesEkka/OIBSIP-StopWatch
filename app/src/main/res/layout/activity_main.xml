@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/stopwatchbg1"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/timerText"
+        android:text="00:00:00"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="180dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/startBtn"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="150dp"
+            android:text="START" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/stopBtn"
+            android:textSize="20sp"
+            android:padding="8dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="150dp"
+            android:enabled="false"
+            android:text="STOP" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetBtn"
+            android:text="RESET"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_below="@+id/startBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:enabled="false" />
+    </RelativeLayout>
+
+
+</LinearLayout>
